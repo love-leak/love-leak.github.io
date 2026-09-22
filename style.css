@@ -19,7 +19,7 @@ body {
     color: pink;
 }
 
-/* Dark overlay over the background */
+/* Dark overlay */
 body::before {
     content: "";
     position: fixed;
@@ -31,41 +31,19 @@ body::before {
     z-index: 0;
 }
 
-/* Keep your actual website content above the overlay */
+/* Keep website above overlay */
 body > * {
     position: relative;
     z-index: 1;
 }
 
-#home {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#socials {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#music {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
+/* HOME */
 #home {
     height: 100vh;
     position: relative;
 }
 
+/* Logo */
 .logo {
     position: absolute;
     top: 25px;
@@ -76,6 +54,7 @@ body > * {
     height: auto;
 }
 
+/* Bottom navigation */
 .bottom-nav {
     position: absolute;
     bottom: 30px;
@@ -100,15 +79,33 @@ body > * {
     opacity: 0.5;
 }
 
+/* SOCIALS */
+#socials {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MUSIC */
+#music {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MOBILE */
 @media (max-width: 600px) {
+
     body {
         background-size: auto 130%;
         background-position: 50% center;
         background-attachment: fixed;
     }
-}
 
-@media (max-width: 600px) {
     .logo {
         width: 140px;
         top: 20px;
