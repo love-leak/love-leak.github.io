@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    color: pink;
+    color: white;
 }
 
 /* Dark overlay */
@@ -43,7 +43,7 @@ body > * {
     position: relative;
 }
 
-/* Logo */
+/* LOVELEAK logo */
 .logo {
     position: absolute;
     top: 25px;
@@ -54,47 +54,32 @@ body > * {
     height: auto;
 }
 
-/* Bottom navigation */
-.bottom-nav {
+/* Footer icons */
+.social-links {
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
 
     display: flex;
-    gap: 60px;
+    align-items: center;
+    gap: 35px;
 }
 
-.bottom-nav a {
-    color: white;
-    text-decoration: none;
+.social-links a {
+    display: block;
+}
 
-    font-size: 14px;
-    letter-spacing: 4px;
+.social-links img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 
     transition: opacity 0.3s;
 }
 
-.bottom-nav a:hover {
+.social-links a:hover img {
     opacity: 0.5;
-}
-
-/* SOCIALS */
-#socials {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* MUSIC */
-#music {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* MOBILE */
@@ -111,13 +96,13 @@ body > * {
         top: 20px;
     }
 
-    .bottom-nav {
+    .social-links {
         bottom: 25px;
-        gap: 35px;
+        gap: 25px;
     }
 
-    .bottom-nav a {
-        font-size: 12px;
-        letter-spacing: 3px;
+    .social-links img {
+        width: 24px;
+        height: 24px;
     }
 }
