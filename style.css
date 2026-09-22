@@ -103,7 +103,7 @@ body::after {
 @media (max-width: 600px) {
 
     body {
-        background-size: auto 150%;
+        background-size: auto 130%;
         background-position: 50% center;
         background-attachment: fixed;
     }
