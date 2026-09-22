@@ -30,7 +30,7 @@ text {
     align-items: center;
 }
 
-body {
+#home {
     background-image: url("images/background.jpg");
     background-size: cover;
     background-position: center;
@@ -40,10 +40,32 @@ body {
 }
 
 #home {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("images/background.jpg");
+    position: relative;
+    min-height: 100vh;
 
+    background-image: url("images/background.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+
+    overflow: hidden;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255, 170, 210, 0.35),
+        rgba(150, 190, 255, 0.35)
+    );
+
+    z-index: 0;
+}
+
+#home > * {
+    position: relative;
+    z-index: 1;
 }
