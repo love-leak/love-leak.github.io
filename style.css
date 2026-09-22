@@ -37,7 +37,7 @@ body {
     background-attachment: fixed;
 
     color: white;
-    font-family: Space Mono, Space Mono;
+    font-family: Space-Mono, Space-Mono;
 }
 
 html,
@@ -63,7 +63,7 @@ body::before {
 
     background: linear-gradient(
         135deg,
-        rgba(109, 53, 161, 0.75),
+        rgba(255, 189, 247, 0.75),
         rgba(109, 53, 255, 0.75)
     );
 
