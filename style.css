@@ -13,3 +13,12 @@ text {
     justify-content: center;
     align-items: center;
 }
+
+#socials {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
