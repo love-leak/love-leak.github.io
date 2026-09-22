@@ -25,7 +25,18 @@ body::before {
     position: fixed;
     inset: 0;
 
-    background: rgba(0, 0, 0, 0.45);
+    background:
+        radial-gradient(
+            ellipse at center,
+            transparent 45%,
+            rgba(0, 0, 0, 0.45) 100%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(255, 120, 190, 0.25),
+            rgba(100, 150, 255, 0.25)
+        ),
+        rgba(0, 0, 0, 0.55);
 
     pointer-events: none;
     z-index: 0;
@@ -92,11 +103,25 @@ body::after {
         rgba(255, 255, 255, 0.025) 0px,
         rgba(255, 255, 255, 0.025) 1px,
         transparent 1px,
-        transparent 3px
+        transparent 4px
     );
+
+    background-size: 100% 8px;
 
     pointer-events: none;
     z-index: 2;
+
+    animation: scanlines 0.15s linear infinite;
+}
+
+@keyframes scanlines {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 8px;
+    }
 }
 
 /* MOBILE */
