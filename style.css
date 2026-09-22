@@ -124,6 +124,59 @@ body::after {
     }
 }
 
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(circle, rgba(255,255,255,0.18) 1px, transparent 1px);
+
+    background-size: 5px 5px;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black 0%,
+            transparent 15%,
+            transparent 85%,
+            black 100%
+        ),
+        linear-gradient(
+            to right,
+            black 0%,
+            transparent 15%,
+            transparent 85%,
+            black 100%
+        );
+
+    mask-composite: intersect;
+
+    pointer-events: none;
+    z-index: 3;
+
+    opacity: 0.15;
+
+    animation: halftoneShift 8s ease-in-out infinite;
+}
+
+@keyframes halftoneShift {
+    0% {
+        background-position: 0 0;
+        opacity: 0.08;
+    }
+
+    50% {
+        background-position: 12px 8px;
+        opacity: 0.18;
+    }
+
+    100% {
+        background-position: 0 0;
+        opacity: 0.08;
+    }
+}
+
 /* MOBILE */
 @media (max-width: 600px) {
 
