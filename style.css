@@ -45,6 +45,13 @@ body {
     color: white;
 }
 
+@media (max-width: 600px) {
+    body {
+        background-position: 40% center;
+        background-attachment: fixed;
+    }
+}
+
 html,
 body {
     margin: 0;
@@ -69,7 +76,7 @@ body::before {
     background: linear-gradient(
         135deg,
         rgba(255, 189, 247, 0.35),
-        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.85),
         rgba(109, 53, 255, 0.35)
     );
 
