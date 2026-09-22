@@ -5,3 +5,11 @@ body {
 text {
   color: pink;
 }
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
