@@ -63,8 +63,8 @@ body::before {
 
     background: linear-gradient(
         135deg,
-        rgba(255, 170, 210, 0.75),
-        rgba(150, 190, 255, 0.75)
+        rgba(109, 53, 161, 0.75),
+        rgba(109, 53, 255, 0.75)
     );
 
     pointer-events: none;
