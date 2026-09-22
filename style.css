@@ -107,3 +107,20 @@ body > * {
         background-attachment: fixed;
     }
 }
+
+@media (max-width: 600px) {
+    .logo {
+        width: 140px;
+        top: 20px;
+    }
+
+    .bottom-nav {
+        bottom: 25px;
+        gap: 35px;
+    }
+
+    .bottom-nav a {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+}
