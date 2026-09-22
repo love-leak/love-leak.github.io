@@ -30,14 +30,18 @@ text {
     align-items: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 body {
+    font-family: "Space Mono", monospace;
+
     background-image: url("images/background.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 
     color: white;
-    font-family: Space-Mono, Space-Mono;
 }
 
 html,
