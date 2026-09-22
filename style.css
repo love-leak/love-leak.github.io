@@ -54,6 +54,35 @@ body > * {
     position: relative;
 }
 
+#home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.25) 1px,
+        transparent 1px
+    );
+
+    background-size: 5px 5px;
+
+    pointer-events: none;
+    z-index: 2;
+
+    opacity: 0.15;
+
+    mask-image: linear-gradient(
+        to right,
+        black 0%,
+        transparent 18%,
+        transparent 82%,
+        black 100%
+    );
+
+    animation: halftoneShift 8s ease-in-out infinite;
+}
+
 /* LOVELEAK logo */
 .logo {
     position: absolute;
@@ -129,52 +158,20 @@ body::after {
     position: fixed;
     inset: 0;
 
-    background:
-        radial-gradient(circle, rgba(255,255,255,0.18) 1px, transparent 1px);
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.025) 0px,
+        rgba(255, 255, 255, 0.025) 1px,
+        transparent 1px,
+        transparent 4px
+    );
 
-    background-size: 5px 5px;
-
-    mask-image:
-        linear-gradient(
-            to bottom,
-            black 0%,
-            transparent 15%,
-            transparent 85%,
-            black 100%
-        ),
-        linear-gradient(
-            to right,
-            black 0%,
-            transparent 15%,
-            transparent 85%,
-            black 100%
-        );
-
-    mask-composite: intersect;
+    background-size: 100% 8px;
 
     pointer-events: none;
-    z-index: 3;
+    z-index: 2;
 
-    opacity: 0.15;
-
-    animation: halftoneShift 8s ease-in-out infinite;
-}
-
-@keyframes halftoneShift {
-    0% {
-        background-position: 0 0;
-        opacity: 0.08;
-    }
-
-    50% {
-        background-position: 12px 8px;
-        opacity: 0.18;
-    }
-
-    100% {
-        background-position: 0 0;
-        opacity: 0.08;
-    }
+    animation: scanlines 0.15s linear infinite;
 }
 
 /* MOBILE */
