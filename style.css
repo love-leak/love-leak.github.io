@@ -57,11 +57,11 @@ body > * {
 /* LOVELEAK logo */
 .logo {
     position: absolute;
-    top: 25px;
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
 
-    width: 360px;
+    width: 400px;
     height: auto;
 }
 
