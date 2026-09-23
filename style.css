@@ -19,7 +19,7 @@ body {
     color: white;
 }
 
-/* Dark overlay */
+/* Dark overlay + pink/blue gradient + vignette */
 body::before {
     content: "";
     position: fixed;
@@ -52,47 +52,6 @@ body > * {
 #home {
     height: 100vh;
     position: relative;
-}
-
-#home::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background:
-        radial-gradient(
-            circle at left,
-            rgba(255, 255, 255, 0.3) 1px,
-            transparent 2px
-        ),
-        radial-gradient(
-            circle at right,
-            rgba(255, 255, 255, 0.3) 1px,
-            transparent 2px
-        ),
-        radial-gradient(
-            circle at top,
-            rgba(255, 255, 255, 0.3) 1px,
-            transparent 2px
-        ),
-        radial-gradient(
-            circle at bottom,
-            rgba(255, 255, 255, 0.3) 1px,
-            transparent 2px
-        );
-
-    background-size:
-        6px 6px,
-        6px 6px,
-        6px 6px,
-        6px 6px;
-
-    pointer-events: none;
-    z-index: 0;
-
-    opacity: 0.25;
-
-    animation: halftoneShift 8s ease-in-out infinite;
 }
 
 /* LOVELEAK logo */
@@ -134,6 +93,7 @@ body > * {
     opacity: 0.5;
 }
 
+/* CRT scanlines */
 body::after {
     content: "";
     position: fixed;
@@ -153,6 +113,16 @@ body::after {
     z-index: 2;
 
     animation: scanlines 0.15s linear infinite;
+}
+
+@keyframes scanlines {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 8px;
+    }
 }
 
 /* MOBILE */
