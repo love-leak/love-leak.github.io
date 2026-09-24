@@ -135,8 +135,8 @@ body::after {
     }
 
     .logo {
-        width: 140px;
-        top: 20px;
+        width: 220px;
+        top: 0;
     }
 
     .social-links {
