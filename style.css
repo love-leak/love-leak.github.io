@@ -127,11 +127,23 @@ body::after {
 
 /* MOBILE */
 @media (max-width: 600px) {
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+    }
 
     body {
-        background-size: auto 130%;
-        background-position: 50% center;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center center;
         background-attachment: fixed;
+    }
+
+    #home {
+        min-height: 100vh;
+        height: 100vh;
     }
 
     .logo {
