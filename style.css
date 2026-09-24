@@ -135,15 +135,16 @@ body::after {
     }
 
     body {
-        min-height: 100vh;
+    min-height: 100dvh;
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
     }
 
     #home {
-        min-height: 100vh;
-        height: 100vh;
+    min-height: 100dvh;
+    height: 100dvh;
+    position: relative;
     }
 
     .logo {
