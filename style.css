@@ -125,6 +125,25 @@ body::after {
     }
 }
 
+.coming-soon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.coming-soon p {
+    margin: 0;
+
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: 300;
+
+    opacity: 0.8;
+}
+
 /* MOBILE */
 @media (max-width: 600px) {
     html,
