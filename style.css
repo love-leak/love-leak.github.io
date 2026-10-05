@@ -80,6 +80,22 @@ body > * {
 }
 
 /* Footer icons */
+/* Footer icons */
+.social-links {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.social-links a {
+    display: block;
+}
+
 .social-links img {
     width: 28px;
     height: 28px;
