@@ -136,6 +136,18 @@ body::after {
 
 .coming-soon p {
     margin: 0;
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: 300;
+    opacity: 0.8;
+
+    text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.5),
+        0 0 12px rgba(255, 150, 220, 0.25);
+}
+
+.coming-soon p {
+    margin: 0;
 
     font-size: 18px;
     letter-spacing: 6px;
