@@ -75,8 +75,8 @@ body > * {
     height: auto;
 
     filter:
-        drop-shadow(0 0 5px rgba(255, 255, 255, 0.6))
-        drop-shadow(0 0 15px rgba(255, 150, 220, 0.3));
+        drop-shadow(0 0 5px rgba(255, 255, 255, 0.4))
+        drop-shadow(0 0 15px rgba(255, 150, 220, 0.15));
 }
 
 /* Footer icons */
@@ -102,8 +102,8 @@ body > * {
     object-fit: contain;
 
     filter:
-        drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))
-        drop-shadow(0 0 10px rgba(255, 150, 220, 0.4));
+        drop-shadow(0 0 4px rgba(255, 255, 255, 0.4))
+        drop-shadow(0 0 10px rgba(255, 150, 220, 0.15));
 
     transition: opacity 0.3s, filter 0.3s;
 }
