@@ -191,7 +191,7 @@ body::after {
 
   body {
     min-height: 100dvh;
-    background-color: #2d2c40;
+    background-color: #000000;
     background-image: url("images/background.jpg");
     background-size: cover;
     background-position: center center;
