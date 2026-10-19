@@ -25,18 +25,20 @@ body::before {
     position: fixed;
     inset: 0;
 
+    
+/* DARK OVERLAY AS WELL AS THE PINK AND BLUE GRADEINT */
     background:
         radial-gradient(
             ellipse at center,
             transparent 45%,
-            rgba(0, 0, 0, 0.45) 100%
+            rgba(0, 0, 0, 0) 100%
         ),
         linear-gradient(
             135deg,
-            rgba(255, 120, 190, 0.25),
-            rgba(100, 150, 255, 0.25)
+            rgba(255, 120, 190, 0),
+            rgba(100, 150, 255, 0)
         ),
-        rgba(0, 0, 0, 0.55);
+        rgba(0, 0, 0, 0);
 
     pointer-events: none;
     z-index: 0;
